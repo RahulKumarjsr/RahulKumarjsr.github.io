@@ -65,12 +65,12 @@ var resumeLink = document.querySelector("#resume-button-1");
 resumeLink.addEventListener("click", function (event) {
   event.preventDefault();
   window.open(
-    "https://drive.google.com/file/d/123BfbWvztAKDDvFBuHX8WxnLLz9BuSER/view?usp=sharing",
+    "https://drive.google.com/file/d/15ohchAMaTttWivvbcDQ1r_GrjCld92ts/view?usp=sharing",
     "_blank"
   );
   let link = document.createElement("a");
   link.href =
-    "https://drive.google.com/uc?export=download&id=123BfbWvztAKDDvFBuHX8WxnLLz9BuSER";
+    "https://drive.google.com/uc?export=download&id=15ohchAMaTttWivvbcDQ1r_GrjCld92ts";
   link.download = "RAHUL-KUMAR-RESUME";
   link.click();
 });
@@ -80,12 +80,12 @@ resumeLink.addEventListener("click", function (event) {
   event.preventDefault();
   window.open(
     // https://drive.google.com/file/d/123BfbWvztAKDDvFBuHX8WxnLLz9BuSER/view?usp=drive_link
-    "https://drive.google.com/file/d/123BfbWvztAKDDvFBuHX8WxnLLz9BuSER/view?usp=sharing",
+    "https://drive.google.com/file/d/15ohchAMaTttWivvbcDQ1r_GrjCld92ts/view?usp=sharing",
     "_blank"
   );
   let link = document.createElement("a");
   link.href =
-    "https://drive.google.com/uc?export=download&id=123BfbWvztAKDDvFBuHX8WxnLLz9BuSER";
+    "https://drive.google.com/uc?export=download&id=15ohchAMaTttWivvbcDQ1r_GrjCld92ts";
   link.download = "RAHUL-KUMAR-RESUME";
   link.click();
 });
