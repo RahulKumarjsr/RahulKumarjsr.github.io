@@ -200,8 +200,8 @@ body {
   justify-content: space-evenly;
   background: none;
   color: rgb(197, 192, 245);
-  margin-top: 1.1rem;
-  font-size: 1.1rem;
+  margin-top: 1.3rem;
+  font-size: 1.7rem;
   font-weight: 500;
   padding: .25rem .5rem;
   border-radius: 6px;
@@ -284,7 +284,7 @@ section .title::after {
   position: absolute;
   bottom: -1.2rem;
   left: 50%;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: black;
   padding: .5rem;
   /* border: 1px solid rgb(102, 0, 153); */
@@ -335,6 +335,7 @@ section .title::after {
 .about .about-content .right .paragraph {
   color: rgb(197, 192, 245);
   font-size: 1.2rem;
+  text-align: justify;
 }
 
 .about .about-content .right .p {
@@ -576,7 +577,9 @@ section .title::after {
   -webkit-filter: drop-shadow(0 0 10px #e34c26);
   filter: drop-shadow(0 0 10px #e34c26);
 }
-
+#express-icon{
+  width: 10%;
+}
 #express-icon:hover {
   -webkit-filter: drop-shadow(0 0 10px #757676);
   filter: drop-shadow(0 0 10px #757676);
@@ -596,12 +599,16 @@ section .title::after {
   -webkit-filter: drop-shadow(0 0 10px #3c873a);
   filter: drop-shadow(0 0 10px #3c873a);
 }
-
+#postman-icon{
+  width: 10%;
+}
 #postman-icon:hover {
   -webkit-filter: drop-shadow(0 0 10px #ff8800);
   filter: drop-shadow(0 0 10px #ff8800);
 }
-
+#netlify-icon{
+  width: 10%;
+}
 #netlify-icon:hover {
   -webkit-filter: drop-shadow(0 0 10px #00d5ff);
   filter: drop-shadow(0 0 10px #00d5ff);
@@ -734,78 +741,10 @@ section .title::after {
 }
 
 /* response media query starts */
-/* @media (max-width: 1300px) {
-  .home .max-width {
-    margin-left: 0px;
-  }
-
-  .navbar .menu li a {
-    font-size: 1.2rem;
-    margin-left: 1.27rem;
-  }
-} */
-
-
-
-@media (max-width: 1104px) {
-  .navbar .logo a {
-    font-size: 1.28rem;
-    font-weight: 600;
-  }
-
-  .about .about-content .left img {
-    height: 350px;
-    width: 350px;
-  }
-
-  .navbar .menu li a {
-    font-size: 15px;
-    margin-left: 21px;
-  }
-
-  .home .home-content .text-3 {
-    font-size: 34px;
-  }
-
-  .home .home-content .text-3 span {
-    font-size: 34px;
-  }
-
-  .home .passport {
-    width: 20%;
-  }
-}
-
-
-
-@media (max-width: 991px) {
-  .max-width {
-    padding: 0 50px;
-  }
-
-  .navbar .menu li a {
-    font-size: 15px;
-    margin-left: 22px;
-  }
-
-  .home .home-content .text-3 {
-    font-size: 30px;
-  }
-
-  .home .home-content .text-3 span {
-    font-size: 30px;
-  }
-
-  .home .passport {
-    width: 20%;
-  }
-}
-
-
 
 @media (max-width: 948px) {
   .max-width {
-    padding: 0 50px;
+    padding: 0 1rem;
   }
 
   .menu-btn {
@@ -831,8 +770,9 @@ section .title::after {
     top: 0;
     background: black;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 5rem;
     transition: all 0.3s ease;
+    opacity: .85;
   }
 
   .navbar .menu.active {
@@ -845,30 +785,30 @@ section .title::after {
 
   .navbar .menu li a {
     display: inline-block;
-    margin: 20px 0;
-    font-size: 25px;
+    margin: 1.8rem 0;
+    font-size: 2rem;
   }
 
   .home .home-content .text-2 {
-    font-size: 40px;
+    font-size: 2.1rem;
   }
 
   .home .home-content .text-3 {
-    font-size: 30px;
+    font-size: 1.8rem;
   }
 
   .home .home-content .text-3 span {
-    font-size: 30px;
+    font-size: 1.5rem;
   }
 
   .home .passport {
-    padding-top: 100px;
-    width: 40%;
+    padding-top: 10rem;
+    width: 30%;
   }
 
-  .max-width {
+  /* .max-width {
     max-width: 800px;
-  }
+  } */
 
   .about .about-content .column {
     width: 100%;
@@ -877,7 +817,7 @@ section .title::after {
   .about .about-content .left {
     display: flex;
     justify-content: center;
-    margin: 0 auto 60px;
+    margin: 0 auto 3.7rem;
   }
 
   .about .about-content .right {
@@ -885,13 +825,16 @@ section .title::after {
   }
 
   .projects .serv-content .card {
-    width: calc(50% - 10px);
-    margin-bottom: 20px;
+    width: calc(50% - .65rem);
+    margin-bottom: 1.25rem;
   }
 
   .skills .skills-content .column {
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 2.4rem;
+  }
+  #express-icon, #postman-icon, #netlify-icon{
+    width: 12%;
   }
 }
 
