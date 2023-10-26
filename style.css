@@ -478,7 +478,7 @@ section .title::after {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  width: 20%;
+  width: 27%;
   height: 2.4rem;
   background-color: rgb(197, 192, 245);
   color: rgb(197, 192, 245);
@@ -577,9 +577,25 @@ section .title::after {
   -webkit-filter: drop-shadow(0 0 10px #e34c26);
   filter: drop-shadow(0 0 10px #e34c26);
 }
-#express-icon{
+
+#express-icon,
+#postman-icon,
+#netlify-icon {
   width: 10%;
 }
+
+#netlify-icon img {
+  width: 45%;
+}
+
+#express-icon img {
+  width: 45%;
+}
+
+#postman-icon img {
+  width: 45%;
+}
+
 #express-icon:hover {
   -webkit-filter: drop-shadow(0 0 10px #757676);
   filter: drop-shadow(0 0 10px #757676);
@@ -599,16 +615,12 @@ section .title::after {
   -webkit-filter: drop-shadow(0 0 10px #3c873a);
   filter: drop-shadow(0 0 10px #3c873a);
 }
-#postman-icon{
-  width: 10%;
-}
+
 #postman-icon:hover {
   -webkit-filter: drop-shadow(0 0 10px #ff8800);
   filter: drop-shadow(0 0 10px #ff8800);
 }
-#netlify-icon{
-  width: 10%;
-}
+
 #netlify-icon:hover {
   -webkit-filter: drop-shadow(0 0 10px #00d5ff);
   filter: drop-shadow(0 0 10px #00d5ff);
@@ -616,6 +628,11 @@ section .title::after {
 
 #github {
   margin-top: 2.7rem;
+}
+
+#github .gitimg{
+  height: 192px;
+   width: 55%;
 }
 
 
@@ -833,37 +850,134 @@ section .title::after {
     width: 100%;
     margin-bottom: 2.4rem;
   }
-  #express-icon, #postman-icon, #netlify-icon{
+
+  #github .gitimg{
+    height: 192px;
+     width: 75%;
+  }
+
+  #express-icon,
+  #postman-icon,
+  #netlify-icon {
     width: 12%;
+  }
+
+  #netlify-icon img {
+    width: 50%;
+  }
+
+  #express-icon img {
+    width: 50%;
+  }
+
+  #postman-icon img {
+    width: 50%;
   }
 }
 
 
-
-@media (max-width: 690px) {
-  .max-width {
-    padding: 0 23px;
+@media (min-width: 0px) and (max-width: 640px) {
+  .serv-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* home page starts */
+  #home{
+    margin: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #home #home-name-div {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  #home .max-width .home-content {
+    padding-top: 0rem;
+  }
+  #home .passport {
+    padding-top: 1rem;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10rem;
+  }
+  
+  #home .home-content a {
+    font-size: 1.1rem;
   }
 
-  .home .home-content .text-1 {
-    font-size: 25px;
+  #home .home-content .text-1 {
+    font-size: 1.2rem;
   }
 
-  .home .home-content .text-2 {
-    font-size: 40px;
+  #home .home-content .text-2 {
+    font-size: 1.3rem;
   }
 
-  .home .home-content .text-3 {
-    font-size: 25px;
+  #home .home-content .text-3 {
+    font-size: 1.1rem;
   }
 
-  .home .home-content .text-3 span {
-    font-size: 25px;
+  #home .home-content .text-3 span {
+    font-size: .8rem;
+  }
+  /* home page ends */
+
+  /* about page starts */
+  #about{
+    align-items: center;
+    justify-content: center;
+  }
+  .about .about-content .left img {
+    width: 20rem;
+  }
+  .about .about-content .right .text {
+    font-size: 1.6rem;
+  }
+  .about #about_contact {
+    width: 30%;
+  }
+  /* about page ends */
+
+  /* github page starts */
+  #github .gitimg{
+    width: 100%;
+  }
+  /* github page ends */
+
+  /* projects page starts */
+  #projects h2{
+    font-size: 2rem;
+  }
+  section .title::after {
+    bottom: -2.1rem;
   }
 
-  .home .passport {
-    padding-top: 100px;
+  #projects .project-cards-container{
+    width: 85vw;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .links .projectLinks {
     width: 40%;
+  }
+  b{
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  /* projects page ends */
+
+
+  #contact .contact-container{
+    margin:auto;
   }
 
   .projects .serv-content .card,
@@ -875,51 +989,26 @@ section .title::after {
   #contact-info {
     margin-top: 25px;
   }
-}
 
 
-
-@media (max-width: 500px) {
-  .home .home-content .text-1 {
-    font-size: 20px;
+  #express-icon,
+  #postman-icon,
+  #netlify-icon {
+    width: 18%;
   }
 
-  .home .home-content .text-2 {
-    font-size: 30px;
+  #express-icon img {
+    width: 83%;
   }
 
-  .home .home-content .text-3 {
-    font-size: 20px;
+  #postman-icon img {
+    width: 83%;
   }
 
-  .home .home-content .text-3 span {
-    font-size: 20px;
+  #netlify-icon img {
+    width: 83%;
   }
-
-  .home .passport {
-    /* margin-left: 30px; */
-    padding-top: 200px;
-    width: 50%;
-  }
-
-  #contact-info {
-    margin-top: 25px;
-  }
-}
-
-
-
-@media (min-width: 0px) and (max-width: 640px) {
-  .serv-content {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  #home .passport {
-    /* margin-left: 150px; */
-    padding-top: 200px;
-    width: 30%;
-  }
+  
 }
 
 
@@ -928,11 +1017,5 @@ section .title::after {
   .serv-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  #home .passport {
-    /* margin-left: 1050px; */
-    padding-top: 200px;
-    width: 30%;
   }
 }
